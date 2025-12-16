@@ -40,7 +40,7 @@ async function seedData() {
       email: 'suryasekar626@gmail.com',
       phone: '0000000000',
       password: hashedPassword,
-      role: 'user'
+      role: 'admin'
     })
     console.log('✓ Surya user seeded')
   }
