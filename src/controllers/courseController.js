@@ -42,8 +42,8 @@ export const createCourse = async (req, res) => {
 
     res.status(201).json(course)
   } catch (error) {
-    console.error(error)
-    res.status(500).json({ message: 'Server error' })
+    console.error('Create course error:', error.message)
+    res.status(500).json({ message: 'Server error: ' + error.message })
   }
 }
 
